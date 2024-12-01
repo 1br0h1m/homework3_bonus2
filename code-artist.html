@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Art - Team 19</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Code Art by Team 19</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team-members.html">Team Members</a></li>
+                <li><a href="hour-of-code.html">Hour of Code</a></li>
+                <li><a href="web-project.html">Our Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="text-align: center;">
+        <section>
+            <h2>What is Code Art?</h2>
+            <p>Code art is mix of programming and creativity that allows us to create interesting shapes and even add some randomnes to them.</p>
+        </section>
+        <section>
+            <h2>Interactive Art</h2>
+            <p>Below is our custom code art. Click the button to generate a unique firework design!</p>
+            <canvas id="art-canvas" width="640" height="480" style="border: 1px solid var(--ada-red);"></canvas>
+            <br>
+            <button onclick="DrawFireworks(document.getElementById('art-canvas').getContext('2d'));">Generate Fireworks</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Team 19 | ADA University | SITE 1101 Principles of Information Systems</p>
+    </footer>
+</body>
+</html>
